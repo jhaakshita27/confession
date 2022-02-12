@@ -1,0 +1,256 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+body{
+    background-color: #f3f3f3;
+}
+.header{
+    background-color: rgb(29, 161, 242);
+    width: 100%;
+    height: 120px;
+}
+
+.header .brand{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px 0;
+    /* text-transform: uppercase; */
+}
+
+.header nav ul{
+    margin:  0 auto;
+    width: fit-content;
+    list-style: none;
+}
+.header nav ul li{
+    display: inline-block;
+    padding: 0 16px;
+}
+.header nav ul li a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: white;
+}
+.hero{
+    width: 100%;
+    height: calc(100vh - 120px);
+    background-image: url(/res/page_cover.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: table;
+}
+
+.hero-content{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.hero-content h1{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 54px;
+    line-height: 70px;
+    text-align: center;
+    font-weight: 800;
+}
+.hero-content h2{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    font-weight: 300;
+}
+.pages div{
+    margin: 16px 12px 0;
+    font-family: Arial, Helvetica, sans-serif;
+    width: calc(100% - 32px);
+    height: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.boxlink-1{
+    background-image: url(/res/box-link_1.jpg);
+}
+.boxlink-2{
+    background-image: url(/res/box-link_2.jpg);
+}
+.boxlink-3{
+    background-image: url(/res/box-link_3.jpg);
+}
+.boxlink-4{
+    background-image: url(/res/box-link_4.jpg);
+}
+.boxlink-5{
+    background-image: url(/res/box-link_5.jpg);
+}
+.boxlink-6{
+    background-image: url(/res/box-link_6.jpg);
+}
+.pages div h1{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 27px;
+    text-align: center;
+    font-weight: 600;
+    line-height: 100px;
+    text-transform: uppercase;
+}
+.projects{
+    display: none;
+    background-color: palevioletred;
+}
+.footer{
+    width:calc(100% - 80px);
+    padding: 40px;
+    background-color: #232F3E;
+    margin-top: 30px;
+    overflow: hidden;
+}
+
+.footer ul{
+    width: fit-content;
+    float: left;
+}
+.footer ul li{
+    display: block;
+}
+.footer ul li a{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    line-height: 30px;
+}
+.work-links{
+    display: none;
+}
+.socials{
+    width: 40px;
+    float: right;
+}
+.socials img{
+    width: 100%;
+    margin: 5px 0;
+}
+
+@media only screen and (min-width:1000px){
+    .header .brand{
+        margin: 0;
+        padding-left: 60px;
+        float: left;
+        line-height: 80px;
+    }
+    .header nav ul{
+        margin:  0;
+        float: left;
+        padding-left: 60px;
+    }
+    .header nav ul li a{
+        line-height: 120px;
+    }
+    .header .projects{
+        display: block;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        color: #111;
+        line-height: 40px;
+        border: 1px solid #111;
+        float: right;
+        padding: 0 20px;
+        margin-right: 60px;
+        margin-top: 40px;
+        transition: 0.5s ease-in-out;
+    }
+    .header nav ul li a:hover{
+        color: rgb(255,20,147);
+    }
+    .header a:hover{
+        color: rgb(255,20,147);
+        font-size: 17px;
+    }
+    .header .brand:hover{
+        font-size: 26px;
+    }
+    .header .projects:hover{
+        background-color:  rgb(255,20,147);
+        color: white;
+        /* transform: scale(1.2); */
+    }
+    .hero{
+        height: 450px;
+    }
+    .wrapper{
+        width: 1000px;
+        margin: 0 auto;
+    }
+    .boxlink-1, .boxlink-3, .boxlink-5, .boxlink-6{
+        width: calc(25% - 20px) !important;
+    }
+    .boxlink-2, .boxlink-4{
+        width: calc(50% - 20px) !important;
+    }
+    .pages div{
+        float: left;
+        margin: 20px 10px 0px;
+        height: 200px;
+    }
+
+    .pages div:hover{
+        background-image: unset;
+        background-color: rgb(255,20,147);
+    }
+
+    .pages div h1{
+        line-height: 200px;
+    }
+    .pages{
+        overflow: hidden;
+    }
+    .work-links{
+        display: block;
+        margin-left: 60px;
+    
+    }
+    .footer ul li a{
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #fff;
+        line-height: 30px;
+    }
+    .work-links ul li a{
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #fff;
+        line-height: 30px;
+    }
+    .footer ul li a:hover{
+        color: rgb(255,20,147);
+        font-size: 16px;
+    }
+    .work-links u li a:hover{
+        color: rgb(255,20,147);
+        font-size: 20px;
+    }
+    .main .write-confession {
+        margin-top: 100px;
+        text-align: center;
+    }
+    .main .write-confession #form-heading h3 {
+        font-style: italic;
+        font-size: 30px;
+    }
+    .main .write-confession #user-email {
+        size: 100px;
+    }
+
+
+}
